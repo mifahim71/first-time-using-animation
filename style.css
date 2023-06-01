@@ -1,0 +1,146 @@
+.letter-space{
+    letter-spacing: 3px;
+}
+.font-family-color{
+    font-family: monospace;
+    color: orange;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+}
+.display-flex{
+    display: flex;
+}
+ 
+.position-relative{
+    position: relative;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.text-decoration-listing{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+header{
+    background-color: black;
+    padding: 15px 50px;
+}
+
+img{
+    position: relative;
+    width: 100%;
+    height: auto ;
+}
+
+a:hover{
+    transform: translateY(-10px);
+    border: 1px solid orange;
+    background-image: linear-gradient(orange, red);
+    color: white;
+    box-shadow: 2px 2px 40px 1px orange;
+}
+
+#a2{
+    left: 90px;
+}
+
+#a3{
+    left: 190px;
+}
+
+#a4{
+    left: 330px;
+}
+
+#a5{
+    left: 450px;
+    top: 10px;
+    font-size: 18px;
+}
+
+a{
+    transition: transform 0.2s linear, border 0.2s linear, background-image 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px black;
+}
+.center-text{
+    top: 240px;
+    left: 500px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+.center-text2{
+    font-size: 140px;
+    letter-spacing: 25px;
+    text-shadow: 2px 2px 2px black;
+    top: 280px;
+    left: 450px;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.center-text{
+    animation: slide 1s linear 0.1s 1 normal;
+}
+
+@keyframes slide2{
+    from{
+        transform: translateX(850px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.center-text2{
+    animation: slide2 1s linear 0.1s 1 normal;
+}
+
+main section a{
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid orange;
+    top: 440px;
+    left: 700px;
+    box-shadow: 1px 1px 10px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+@keyframes slidetop{
+    from{
+        transform: translateY(1050px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#center-anchor{
+    animation: slidetop 1s linear 0.1s 1 normal;
+}
